@@ -1,4 +1,4 @@
-module.export = class Person {
+module.exports = class Person {
     constructor(name, age){
         console.log("Hi, I am created!", name)
         this.name = name

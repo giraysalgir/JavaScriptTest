@@ -1,16 +1,5 @@
 const Person = require("./person.js") 
-
-class Meetup{
-    constructor(name){
-       this.name = name 
-       this.attendees = [] 
-    }
-    printAttendeeNames(){
-        this.attendees.forEach(printName)
-        
-    }
-}
-printName = person => console.log(person.name, person.age)
+const Meetup = require("./meetup.js") 
 
 const mert = new Person("Mert", 34)
 const armagan = new Person("Armagan", 35)
