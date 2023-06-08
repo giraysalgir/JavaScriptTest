@@ -1,7 +1,7 @@
 
 const Person = require("./person.js") 
 const Meetup = require("./meetup.js") 
-const Chalk = require("./node_modules/chalk")
+const Chalk = require("chalk/index.js")
 
 const mert = new Person("Mert", 34)
 const armagan = new Person("Armagan", 35)
