@@ -1,7 +1,10 @@
 const Database = require("./database")
 const Meetup = require("./meetup")
-const loadedFile = Database.load("./meetup.json")
+const Person = require("./person")
 
-const wtmb = Meetup.create(loadedFile)
-console.log(wtmb.attendees)
+const wtmb = new Meetup("wtmb")
+Database.save("berlin.json", wtmb)
+
+
+const loadedFile = Database.load(".berlin.json")
 

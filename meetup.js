@@ -1,15 +1,14 @@
-const Chalk = require("chalk")
+
 module.exports = class Meetup{
-    constructor(name, attendees = []){
+    constructor(name){
        this.name = name 
-       this.attendees = attendees
+       this.attendees = []
     }
     printAttendeeNames(){
         this.attendees.forEach(printName)
-        
     }
-    static create(obj){
-        return new Meetup(obj.name, obj.attendees)
-    }
+    //static create(obj){
+    //    return new Meetup(obj.name, obj.attendees)
+    //}
 }
-printName = person => console.log(Chalk.bgGreen(person.name, person.age))
+printName = person => console.log(person.name, person.age)
